@@ -1,0 +1,88 @@
+:root{
+    --zmienna: hidden;
+}
+
+*{
+    font-family: Verdana;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+header #left{
+    background-color: #29434E;
+    color: white;
+    text-align: center;
+    width: 70%;
+    height: 70px;
+}
+
+header #right{
+    background-color: #29434E;
+    color: white;
+    width: 30%;
+    height: 70px;
+}
+
+.list{
+    background-color: #B0BEC5;
+    height: 320px;
+    overflow-y: scroll;
+}
+
+.rodzic{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    background-color: #29434E;
+    color: white;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    background-color: #546E7A;
+    color: white;
+    margin: 0;
+}
+
+h4{
+    text-align: center;
+    margin: 0;
+}
+
+.video{
+    padding: 5px;
+    height: 280px;
+    width: 226px;
+}
+
+button{
+    padding: 0;
+    border: 0;
+    transition: 0.3s;
+}
+
+button:hover{
+    transition: 0.3s;
+    transform:scale(1.2);
+    --zmienna: visible;
+    cursor: pointer;
+}
+
+button::after{
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 10px);
+    color: red;
+    font-weight: 900;
+    content: 'USUN';
+    visibility:var(--zmienna);
+}
